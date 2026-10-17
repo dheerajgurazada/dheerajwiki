@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dheeraj Gurazada</title>
+<meta name="description" content="Dheeraj Gurazada — MS Computer Engineering at NC State. Design Verification, Silicon & System Validation, Embedded Firmware Validation.">
+<meta property="og:title" content="Dheeraj Gurazada — Silicon Verification & Validation">
+<meta property="og:description" content="From airbag ECUs at Bosch to out-of-order CPUs at NC State.">
+<meta property="og:image" content="https://dheeraj.wiki/assets/profile.jpg">
+<meta property="og:url" content="https://dheeraj.wiki/">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://dheeraj.wiki/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a0f1c'/%3E%3Ctext x='16' y='21' font-family='monospace' font-size='14' font-weight='700' fill='%2322d3ee' text-anchor='middle'%3EDG%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<canvas id="circuit" aria-hidden="true"></canvas>
+<div class="glow g1" aria-hidden="true"></div>
+<div class="glow g2" aria-hidden="true"></div>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a href="#top" class="brand"><span class="brand-chip">DG</span><span class="brand-name">dheeraj<span class="accent">.dv</span></span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    <nav id="menu">
+      <a href="#about">About</a>
+      <a href="#now">Now</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#achievements">Achievements</a>
+      <a href="assets/Dheeraj_Gurazada_Resume.pdf" class="nav-cta" target="_blank" rel="noopener">Résumé ↗</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <p class="status reveal"><span class="dot"></span> Open to Summer 2027 internships</p>
+        <h1 class="reveal">Hi, I'm <span class="grad">Dheeraj</span>.<br>I make sure silicon<br>does what it promises.</h1>
+        <p class="typing reveal"><span class="mono">&gt;</span> <span id="typed"></span><span class="caret">_</span></p>
+        <p class="lede reveal">
+          2.5+ years validating safety-critical <b>Airbag ECUs at Bosch</b>, now an MS Computer Engineering student at
+          <b>NC State</b>, building at the boundary of RTL design, UVM verification and computer architecture.
+        </p>
+        <div class="actions reveal">
+          <a class="btn primary" href="assets/Dheeraj_Gurazada_Resume.pdf" target="_blank" rel="noopener">View Résumé</a>
+          <a class="btn" href="https://www.linkedin.com/in/dheerajgurazada" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.1c0-1.22-.02-2.8-1.7-2.8-1.71 0-1.97 1.33-1.97 2.7V21h-4z"/></svg>
+            LinkedIn</a>
+          <a class="btn" href="https://github.com/dheerajgurazada" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.7 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>
+            GitHub</a>
+          <a class="btn" href="mailto:sguraza@ncsu.edu">
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" d="M3 5h18v14H3zM3 6l9 7 9-7"/></svg>
+            Email</a>
+        </div>
+      </div>
+
+      <div class="hero-photo reveal">
+        <div class="ring"></div>
+        <div class="ring ring2"></div>
+        <div class="photo"><img src="assets/profile.jpg" alt="Portrait of Dheeraj Gurazada"></div>      </div>
+    </div>
+
+    <div class="wrap stats">
+      <div class="stat reveal"><span class="num" data-count="2.5" data-suffix="+">0</span><p>years validating safety-critical ECUs</p></div>
+      <div class="stat reveal"><span class="num" data-count="50" data-suffix="+">0</span><p>hardware / firmware defects root-caused</p></div>
+      <div class="stat reveal"><span class="num" data-count="95" data-suffix="%">0</span><p>functional coverage with UVM</p></div>
+      <div class="stat reveal"><span class="num" data-count="50" data-suffix="%">0</span><p>SIL verification effort automated away</p></div>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll to about"><span></span></a>
+  </section>
+
+  <!-- ABOUT / JOURNEY -->
+  <section id="about" class="section">
+    <div class="wrap">
+      <p class="kicker reveal">01 · About</p>
+      <h2 class="reveal">From <span class="grad">airbags</span> to <span class="grad">out-of-order CPUs</span></h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>I like hardware that has to be right the first time. At Bosch, that meant airbag controllers, where a missed
+            fault isn't a bug report, it's a safety issue. I spent two and a half years on HIL and SIL benches injecting faults,
+            reading DTCs over UDS and chasing signals with scopes, logic analyzers and JTAG until each failure had a root cause.</p>
+          <p>Along the way I kept going deeper into the chip: an image-dehazing accelerator on an FPGA in Taiwan, a
+            UVM testbench for an AMBA APB slave, and now a cycle-accurate out-of-order processor simulator at NC State.</p>
+          <p>My goal is to bring that <b>validation-first mindset</b> to pre-silicon design verification and post-silicon validation.</p>
+        </div>
+        <div class="terminal reveal" aria-label="Quick facts">
+          <div class="term-bar"><i></i><i></i><i></i><span>~/dheeraj — zsh</span></div>
+          <pre class="term-body"><span class="p">$</span> whoami
+Sai Siva Naga Dheeraj Gurazada
+<span class="p">$</span> cat focus.txt
+Design Verification · Silicon Validation
+Embedded Firmware Validation
+<span class="p">$</span> locate --history
+Thanjavur → Taoyuan, TW → Coimbatore
+→ <span class="hl">Raleigh, NC</span>
+<span class="p">$</span> echo $STATUS
+<span class="hl">seeking_summer_2027_internship=true</span>
+<span class="p">$</span> <span class="caret">▋</span></pre>
+        </div>
+      </div>
+
+      <div class="journey reveal">
+        <div class="j-line"><div class="j-fill"></div></div>
+        <div class="j-stop"><span class="j-dot"></span><b>2019</b><p>B.Tech ECE<br><small>SASTRA · Thanjavur</small></p></div>
+        <div class="j-stop"><span class="j-dot"></span><b>2023</b><p>FPGA Research<br><small>Yuan Ze · Taiwan</small></p></div>
+        <div class="j-stop"><span class="j-dot"></span><b>2023</b><p>DV Training<br><small>Maven Silicon</small></p></div>
+        <div class="j-stop"><span class="j-dot"></span><b>2024</b><p>ECU Validation<br><small>Bosch · Coimbatore</small></p></div>
+        <div class="j-stop now"><span class="j-dot"></span><b>2026</b><p>MS Comp. Eng.<br><small>NC State · Raleigh</small></p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOW / CURRENT PROJECTS -->
+  <section id="now" class="section">
+    <div class="wrap">
+      <p class="kicker reveal">02 · Now</p>
+      <h2 class="reveal">Currently building</h2>
+
+      <article class="feature reveal">
+        <div class="feature-head">
+          <div>
+            <span class="badge live"><span class="dot"></span> In progress</span>
+            <h3>Out-of-Order Superscalar Processor Simulator</h3>
+            <p class="muted mono small">C++ · Aug 2026 – present</p>
+          </div>
+        </div>
+        <p>A cycle-accurate, trace-driven model of a superscalar out-of-order core with register renaming, an issue queue
+          and a reorder buffer. I sweep pipeline width, ROB size and issue-queue size to measure how each one moves <b>IPC</b>.</p>
+
+        <div class="pipeline" aria-label="Pipeline stages: Fetch, Decode, Rename, Dispatch, Issue, Execute, Writeback, Retire">
+          <div class="stage">FE</div><div class="stage">DE</div><div class="stage">RN</div><div class="stage">DI</div>
+          <div class="stage">IS</div><div class="stage">EX</div><div class="stage">WB</div><div class="stage">RT</div>
+          <div class="instr i1">add</div><div class="instr i2">lw</div><div class="instr i3">mul</div><div class="instr i4">beq</div>
+        </div>
+        <div class="tags"><span>Register Renaming</span><span>ROB</span><span>Issue Queue</span><span>IPC Analysis</span><span>C++</span></div>
+      </article>
+
+      <div class="now-grid">
+        <article class="mini reveal">
+          <div class="mini-ico">◈</div>
+          <h4>ASIC &amp; FPGA Design with Verilog</h4>
+          <p>Graduate coursework at NC State: RTL through synthesis, timing and FPGA implementation.</p>
+        </article>
+        <article class="mini reveal">
+          <div class="mini-ico">⌬</div>
+          <h4>Microprocessor Architecture</h4>
+          <p>Pipelining, branch prediction, caches and memory hierarchy, feeding straight into the simulator.</p>
+        </article>
+        <article class="mini reveal">
+          <div class="mini-ico">⫶</div>
+          <h4>Parallel Computer Architecture</h4>
+          <p>Multicore, coherence and interconnects: how many cores share one truth.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="wrap">
+      <p class="kicker reveal">03 · Experience</p>
+      <h2 class="reveal">Where I've worked</h2>
+
+      <div class="timeline">
+        <article class="job reveal">
+          <span class="node"></span>
+          <div class="job-card">
+            <div class="job-top">
+              <div class="logo"><img src="assets/bosch-mark.jpg" alt="Bosch logo"></div>
+              <div class="job-title">
+                <h3>Bosch Global Software Technologies</h3>
+                <p class="role">Associate Software Engineer: Embedded Systems (V&amp;V)</p>
+              </div>
+              <p class="meta mono">Jan 2024 – Jul 2026<br>Coimbatore, India</p>
+            </div>
+            <ul>
+              <li>Validated <b>ISO 26262</b> safety-critical Airbag ECU hardware and firmware against requirements, writing Python and Perl test scripts to verify CAN/UDS communication across HIL and SIL benches.</li>
+              <li>Root-caused ECU failures by injecting faults, reading DTCs via UDS and probing signals with oscilloscopes, logic analyzers and JTAG, reporting <b>50+ defects</b>.</li>
+              <li>Automated nightly regression in <b>Jenkins</b> across HIL and SIL benches, cutting manual verification effort by <b>30%</b> (HIL) and <b>50%</b> (SIL).</li>
+              <li>Built a Python DBC analysis tool and an AI-assisted code review assistant, cutting redundant manual work by <b>40%</b>.</li>
+            </ul>
+            <div class="tags"><span>HIL / SIL</span><span>CAN · UDS</span><span>JTAG</span><span>Python</span><span>Perl</span><span>Jenkins</span><span>CANoe</span></div>
+          </div>
+        </article>
+
+        <article class="job reveal">
+          <span class="node"></span>
+          <div class="job-card">
+            <div class="job-top">
+              <div class="logo"><img src="assets/maven-silicon.png" alt="Maven Silicon logo"></div>
+              <div class="job-title">
+                <h3>Maven Silicon</h3>
+                <p class="role">Design and Verification Trainee</p>
+              </div>
+              <p class="meta mono">Jun 2023 – Dec 2023<br>Remote</p>
+            </div>
+            <ul>
+              <li>Built a <b>UVM testbench</b> for an AMBA APB slave RAM with an active agent (sequencer, driver, monitor), a scoreboard with reference model and a coverage subscriber. Ran directed tests plus 400 constrained-random transactions to reach <b>95% functional coverage</b>.</li>
+              <li>Designed a synthesizable <b>1×3 packet router</b> in Verilog with header-based address decoding, FSM control, per-port FIFO buffering, parity checking and reset handling.</li>
+            </ul>
+            <div class="tags"><span>SystemVerilog</span><span>UVM</span><span>AMBA APB</span><span>Verilog</span><span>Questa</span></div>
+          </div>
+        </article>
+
+        <article class="job reveal">
+          <span class="node"></span>
+          <div class="job-card has-photo">
+            <div>
+              <div class="job-top">
+                <div class="logo"><img src="assets/yzu-logo.jpg" alt="Yuan Ze University logo"></div>
+                <div class="job-title">
+                  <h3>Yuan Ze University</h3>
+                  <p class="role">RTL Design and FPGA Research Intern</p>
+                </div>
+                <p class="meta mono">Feb 2023 – Jul 2023<br>Taoyuan, Taiwan</p>
+              </div>
+              <ul>
+                <li>Designed an <b>image dehazing hardware accelerator</b> in Verilog with a line-buffer-less architecture, cutting on-chip memory for airlight estimation from <b>4–8 line buffers to zero</b>.</li>
+                <li>Implemented and validated synthesizable RTL on a <b>Xilinx PYNQ-Z2 FPGA</b> through an end-to-end MATLAB → RTL → Vivado flow.</li>
+              </ul>
+              <div class="tags"><span>Verilog</span><span>FPGA</span><span>Vivado</span><span>MATLAB</span></div>
+            </div>
+            <figure class="job-photo">
+              <img src="assets/yzu-campus.jpg" alt="Yuan Ze University campus, Taoyuan">
+              <figcaption>Research abroad · Taoyuan, Taiwan</figcaption>
+            </figure>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section">
+    <div class="wrap">
+      <p class="kicker reveal">04 · Education</p>
+      <h2 class="reveal">Where I've studied</h2>
+      <div class="edu-grid">
+        <article class="edu reveal">
+          <div class="edu-img">
+            <img src="assets/ncstate-campus.jpg" alt="NC State University campus">
+            <span class="badge live floating"><span class="dot"></span> Current</span>
+          </div>
+          <div class="edu-body">
+            <div class="edu-head">
+              <div class="wolf">NC<br>STATE</div>
+              <div>
+                <h3>North Carolina State University</h3>
+                <p class="role">M.S. Computer Engineering</p>
+              </div>
+            </div>
+            <p class="meta-line mono">Aug 2026 – May 2028 (exp.) · Raleigh, NC</p>
+            <div class="tags"><span>ASIC &amp; FPGA Design</span><span>Microprocessor Architecture</span><span>Parallel Architecture</span></div>
+          </div>
+        </article>
+        <article class="edu reveal">
+          <div class="edu-img"><img src="assets/sastra-campus.jpg" alt="SASTRA Deemed University campus"></div>
+          <div class="edu-body">
+            <div class="edu-head">
+              <div class="edu-logo"><img src="assets/sastra-logo.webp" alt="SASTRA logo"></div>
+              <div>
+                <h3>SASTRA Deemed University</h3>
+                <p class="role">B.Tech Electronics &amp; Communication Engg.</p>
+              </div>
+            </div>
+            <p class="meta-line mono">Aug 2019 – May 2023 · Thanjavur, India</p>
+            <div class="tags"><span>CGPA 8.56 / 10</span><span>Electronics &amp; Communication</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="wrap">
+      <p class="kicker reveal">05 · Skills</p>
+      <h2 class="reveal">Toolkit</h2>
+      <div class="skills">
+        <div class="skill reveal">
+          <h4><span class="mono">01</span> Design &amp; Verification</h4>
+          <div class="tags"><span>Verilog</span><span>SystemVerilog</span><span>UVM</span><span>SVA</span><span>Functional Coverage</span><span>Constrained-Random</span><span>Scoreboards</span><span>Reference Models</span><span>AMBA APB</span><span>FSM</span><span>FIFO</span><span>Synthesis</span><span>FPGA Prototyping</span></div>
+        </div>
+        <div class="skill reveal">
+          <h4><span class="mono">02</span> Validation &amp; Lab Debug</h4>
+          <div class="tags"><span>HIL</span><span>SIL</span><span>Requirements-Based Testing</span><span>Test Automation</span><span>Fault Injection</span><span>Root-Cause Analysis</span><span>JTAG</span><span>Oscilloscope</span><span>Logic Analyzer</span></div>
+        </div>
+        <div class="skill reveal">
+          <h4><span class="mono">03</span> Embedded &amp; Protocols</h4>
+          <div class="tags"><span>ECU Validation</span><span>CAN</span><span>CAN FD</span><span>UDS</span><span>J1939</span><span>UART</span><span>DBC</span><span>DTC Diagnostics</span></div>
+        </div>
+        <div class="skill reveal">
+          <h4><span class="mono">04</span> Computer Architecture</h4>
+          <div class="tags"><span>Pipelining</span><span>Out-of-Order Execution</span><span>Register Renaming</span><span>ROB</span><span>Issue Queue</span><span>Caches</span></div>
+        </div>
+        <div class="skill wide reveal">
+          <h4><span class="mono">05</span> Programming &amp; Tools</h4>
+          <div class="tags"><span>C</span><span>C++</span><span>Python</span><span>Perl</span><span>MATLAB</span><span>Linux</span><span>Jenkins</span><span>Questa</span><span>ModelSim</span><span>Vivado</span><span>CANoe</span><span>ECU-TEST</span><span>TurboLIFT</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements" class="section">
+    <div class="wrap">
+      <p class="kicker reveal">06 · Achievements</p>
+      <h2 class="reveal">Highlights</h2>
+      <div class="ach-grid">
+        <article class="ach pub reveal">
+          <span class="ach-k">Publication · IEEE ICASSP 2023</span>
+          <h3>Revisiting the Utility of Spectral Measures on Spoken Text Recognition</h3>
+          <p>Peer-reviewed paper at the IEEE International Conference on Acoustics, Speech and Signal Processing.</p>
+        </article>
+        <article class="ach reveal"><span class="ach-k">Automation</span><h3>30% / 50%</h3><p>Manual verification effort cut on HIL / SIL benches with Jenkins nightly regression.</p></article>
+        <article class="ach reveal"><span class="ach-k">Quality</span><h3>50+ defects</h3><p>Root-caused on ISO 26262 safety-critical airbag ECUs.</p></article>
+        <article class="ach reveal"><span class="ach-k">Tooling</span><h3>40% less rework</h3><p>From a Python DBC analysis tool and an AI-assisted code review assistant.</p></article>
+        <article class="ach reveal"><span class="ach-k">Hardware</span><h3>0 line buffers</h3><p>Down from 4–8 in prior dehazing accelerator designs.</p></article>
+        <article class="ach reveal"><span class="ach-k">Global</span><h3>3 countries</h3><p>Studied and worked across India, Taiwan and the United States.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="wrap">
+      <div class="contact-card reveal">
+        <p class="kicker">07 · Contact</p>
+        <h2>Let's build something <span class="grad">that works the first time.</span></h2>
+        <p class="muted">Looking for Summer 2027 internships in Design Verification, Silicon &amp; System Validation, or Embedded Firmware Validation.</p>
+        <div class="actions center">
+          <a class="btn primary" href="mailto:sguraza@ncsu.edu">sguraza@ncsu.edu</a>
+          <a class="btn" href="https://www.linkedin.com/in/dheerajgurazada" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a class="btn" href="https://github.com/dheerajgurazada" target="_blank" rel="noopener">GitHub ↗</a>
+          <a class="btn" href="assets/Dheeraj_Gurazada_Resume.pdf" target="_blank" rel="noopener">Résumé ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap"><span class="mono">© 2026 Dheeraj Gurazada</span><span class="mono muted">Raleigh, NC · built by hand, verified twice</span></div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
