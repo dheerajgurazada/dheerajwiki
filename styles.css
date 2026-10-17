@@ -83,9 +83,15 @@ b, strong { font-weight: 600; color: #fff; }
 .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--green); box-shadow: 0 0 0 0 rgba(52, 211, 153, .7); animation: pulse 2s infinite; flex-shrink: 0; }
 @keyframes pulse { 70% { box-shadow: 0 0 0 10px rgba(52, 211, 153, 0); } 100% { box-shadow: 0 0 0 0 rgba(52, 211, 153, 0); } }
 h1, h2, h3, h4 { font-family: var(--display); font-weight: 600; line-height: 1.15; margin: 0; letter-spacing: -.02em; }
-h1 { font-size: clamp(36px, 5.4vw, 62px); margin-bottom: 22px; }
-.typing { font-family: var(--mono); font-size: clamp(15px, 1.8vw, 18px); color: var(--cyan); margin: 0 0 20px; min-height: 1.6em; }
-.typing .mono { color: var(--violet); }
+.hello { font-size: 15px; color: var(--cyan); margin: 0 0 6px; letter-spacing: .02em; }
+h1 { font-size: clamp(40px, 6vw, 68px); line-height: 1.05; margin-bottom: 20px; letter-spacing: -.03em; }
+.roles { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 24px; }
+.roles span {
+  font-family: var(--mono); font-size: 13px; color: #dbeafe; padding: 6px 12px; border-radius: 8px;
+  background: linear-gradient(135deg, rgba(34,211,238,.10), rgba(139,92,246,.10)); border: 1px solid rgba(129,140,248,.3);
+}
+.tagline { font-family: var(--display); font-size: clamp(20px, 2.3vw, 26px); font-weight: 500; color: #fff; margin: 0 0 14px;
+  padding-left: 16px; border-left: 2px solid; border-image: var(--grad) 1; letter-spacing: -.01em; }
 .caret { animation: blink 1s steps(1) infinite; color: var(--cyan); }
 @keyframes blink { 50% { opacity: 0; } }
 .lede { font-size: 17px; color: #b6c2d4; max-width: 560px; margin: 0 0 30px; }
@@ -111,7 +117,8 @@ h1 { font-size: clamp(36px, 5.4vw, 62px); margin-bottom: 22px; }
 }
 .portrait-img { border-radius: 14px; overflow: hidden; aspect-ratio: 4 / 4.4; background: #e9ecef; }
 .portrait-img img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; }
-.portrait figcaption { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 14px 6px 4px; }
+.portrait figcaption { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 10px; padding: 14px 6px 4px; }
+.portrait figcaption > div { min-width: 0; }
 .portrait figcaption b { display: block; font-family: var(--display); font-size: 15px; }
 .portrait figcaption span { font-size: 12px; color: var(--muted); }
 .loc-pill { font-size: 11px !important; padding: 4px 9px; border-radius: 999px; border: 1px solid var(--line-2); white-space: nowrap; color: #a5f3fc !important; }

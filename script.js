@@ -1,30 +1,6 @@
 ﻿(() => {
   const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  /* ---------- Typing roles ---------- */
-  const roles = [
-    "Design Verification Engineer",
-    "Silicon & System Validation",
-    "Embedded Firmware Validation",
-    "RTL Designer · Verilog / SystemVerilog",
-    "Computer Architecture Enthusiast",
-  ];
-  const typed = document.getElementById("typed");
-  if (reduced) {
-    typed.textContent = roles[0];
-  } else {
-    let r = 0, i = 0, deleting = false;
-    const tick = () => {
-      const word = roles[r];
-      typed.textContent = word.slice(0, i);
-      if (!deleting && i < word.length) { i++; setTimeout(tick, 55); }
-      else if (!deleting) { deleting = true; setTimeout(tick, 1800); }
-      else if (i > 0) { i--; setTimeout(tick, 28); }
-      else { deleting = false; r = (r + 1) % roles.length; setTimeout(tick, 300); }
-    };
-    tick();
-  }
-
   /* ---------- Reveal on scroll + counters ---------- */
   const countUp = (el) => {
     const target = parseFloat(el.dataset.count);
