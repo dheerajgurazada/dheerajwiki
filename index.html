@@ -67,10 +67,27 @@
         </div>
       </div>
 
-      <div class="hero-photo reveal">
-        <div class="ring"></div>
-        <div class="ring ring2"></div>
-        <div class="photo"><img src="assets/profile.jpg" alt="Portrait of Dheeraj Gurazada"></div>      </div>
+      <figure class="portrait reveal spot">
+        <div class="portrait-img"><img src="assets/profile.jpg" alt="Portrait of Dheeraj Gurazada"></div>
+        <figcaption>
+          <div>
+            <b>Dheeraj Gurazada</b>
+            <span>MS CompE · NC State</span>
+          </div>
+          <span class="loc-pill mono">Raleigh, NC</span>
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="wrap logos reveal">
+      <span>Experience &amp; education at</span>
+      <div class="logo-row">
+        <div class="logo-pill"><img src="assets/bosch-mark.jpg" alt="">Bosch</div>
+        <div class="logo-pill"><img src="assets/maven-silicon.png" alt="Maven Silicon"></div>
+        <div class="logo-pill"><img src="assets/yzu-logo.jpg" alt="">Yuan Ze Univ.</div>
+        <div class="logo-pill nc">NC STATE</div>
+        <div class="logo-pill"><img src="assets/sastra-logo.webp" alt="">SASTRA</div>
+      </div>
     </div>
 
     <div class="wrap stats">
@@ -225,6 +242,7 @@ Thanjavur → Taoyuan, TW → Coimbatore
                 <div class="job-title">
                   <h3>Yuan Ze University</h3>
                   <p class="role">RTL Design and FPGA Research Intern</p>
+                  <span class="award-chip">★ Honorable Mention Award</span>
                 </div>
                 <p class="meta mono">Feb 2023 – Jul 2023<br>Taoyuan, Taiwan</p>
               </div>
@@ -278,7 +296,7 @@ Thanjavur → Taoyuan, TW → Coimbatore
               </div>
             </div>
             <p class="meta-line mono">Aug 2019 – May 2023 · Thanjavur, India</p>
-            <div class="tags"><span>CGPA 8.56 / 10</span><span>Electronics &amp; Communication</span></div>
+            <div class="tags"><span class="hot">★ Top 3%</span><span>CGPA 8.56 / 10</span><span>Electronics &amp; Communication</span></div>
           </div>
         </article>
       </div>
@@ -320,17 +338,37 @@ Thanjavur → Taoyuan, TW → Coimbatore
     <div class="wrap">
       <p class="kicker reveal">06 · Achievements</p>
       <h2 class="reveal">Highlights</h2>
-      <div class="ach-grid">
-        <article class="ach pub reveal">
+      <div class="bento">
+        <article class="ach award reveal spot">
+          <figure class="award-img">
+            <img src="assets/award-yzu.jpg" alt="Receiving the Honorable Mention award at Yuan Ze University" onerror="this.parentElement.classList.add('empty')">
+            <div class="medal" aria-hidden="true">
+              <svg viewBox="0 0 64 64" width="64" height="64"><path d="M22 4h20l-6 18H28z" fill="#22d3ee" opacity=".6"/><path d="M14 4h10l8 18-6 3zM50 4H40l-8 18 6 3z" fill="#818cf8" opacity=".7"/><circle cx="32" cy="40" r="18" fill="none" stroke="#fcd34d" stroke-width="3"/><circle cx="32" cy="40" r="12" fill="#fcd34d" opacity=".9"/><path d="M32 32l2.4 5 5.4.6-4 3.7 1.1 5.3L32 44l-4.9 2.6 1.1-5.3-4-3.7 5.4-.6z" fill="#0a0f1c"/></svg>
+            </div>
+          </figure>
+          <div class="award-body">
+            <span class="ach-k">Award · Yuan Ze University, Taiwan · 2023</span>
+            <h3>Honorable Mention Award</h3>
+            <p>Recognised for my RTL design and FPGA research at Yuan Ze University: a line-buffer-less image dehazing hardware accelerator, validated on a Xilinx PYNQ-Z2.</p>
+          </div>
+        </article>
+
+        <article class="ach rank reveal spot">
+          <span class="ach-k">Academic Excellence · SASTRA</span>
+          <h3 class="big"><span class="grad">Top 3%</span></h3>
+          <p>Ranked in the top 3% at SASTRA Deemed University, B.Tech Electronics &amp; Communication Engineering (CGPA 8.56 / 10).</p>
+        </article>
+
+        <article class="ach pub reveal spot">
           <span class="ach-k">Publication · IEEE ICASSP 2023</span>
           <h3>Revisiting the Utility of Spectral Measures on Spoken Text Recognition</h3>
           <p>Peer-reviewed paper at the IEEE International Conference on Acoustics, Speech and Signal Processing.</p>
         </article>
-        <article class="ach reveal"><span class="ach-k">Automation</span><h3>30% / 50%</h3><p>Manual verification effort cut on HIL / SIL benches with Jenkins nightly regression.</p></article>
-        <article class="ach reveal"><span class="ach-k">Quality</span><h3>50+ defects</h3><p>Root-caused on ISO 26262 safety-critical airbag ECUs.</p></article>
-        <article class="ach reveal"><span class="ach-k">Tooling</span><h3>40% less rework</h3><p>From a Python DBC analysis tool and an AI-assisted code review assistant.</p></article>
-        <article class="ach reveal"><span class="ach-k">Hardware</span><h3>0 line buffers</h3><p>Down from 4–8 in prior dehazing accelerator designs.</p></article>
-        <article class="ach reveal"><span class="ach-k">Global</span><h3>3 countries</h3><p>Studied and worked across India, Taiwan and the United States.</p></article>
+
+        <article class="ach reveal spot"><span class="ach-k">Automation</span><h3>30% / 50%</h3><p>Manual verification effort cut on HIL / SIL benches.</p></article>
+        <article class="ach reveal spot"><span class="ach-k">Quality</span><h3>50+ defects</h3><p>Root-caused on ISO 26262 airbag ECUs.</p></article>
+        <article class="ach reveal spot"><span class="ach-k">Tooling</span><h3>40% less</h3><p>Redundant manual work, via Python and AI tooling.</p></article>
+        <article class="ach reveal spot"><span class="ach-k">Global</span><h3>3 countries</h3><p>Studied and worked in India, Taiwan and the US.</p></article>
       </div>
     </div>
   </section>

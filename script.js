@@ -85,6 +85,18 @@
     if (e.target.tagName === "A") { menu.classList.remove("open"); menuBtn.setAttribute("aria-expanded", "false"); }
   });
 
+  /* ---------- Cursor spotlight on cards ---------- */
+  if (!reduced && window.matchMedia("(hover: hover)").matches) {
+    document.querySelectorAll(".spot, .job-card, .edu, .mini, .skill, .feature, .stat").forEach((card) => {
+      card.classList.add("spot");
+      card.addEventListener("pointermove", (e) => {
+        const r = card.getBoundingClientRect();
+        card.style.setProperty("--mx", `${e.clientX - r.left}px`);
+        card.style.setProperty("--my", `${e.clientY - r.top}px`);
+      });
+    });
+  }
+
   /* ---------- Static circuit-board background ---------- */
   const canvas = document.getElementById("circuit");
   const ctx = canvas.getContext("2d");
